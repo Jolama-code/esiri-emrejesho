@@ -1,0 +1,31 @@
+.help-banner {
+  height: 92px;
+  background:
+    radial-gradient(circle, rgba(255, 255, 255, 0.8) 2px, transparent 2.5px) right 40px top 18px / 32px 32px no-repeat,
+    radial-gradient(circle, rgba(255, 255, 255, 0.55) 2px, transparent 2.5px) right 40px top 18px / 160px 64px,
+    linear-gradient(110deg, #0a7aa8 0%, #0a94c9 40%, #12b3ea 100%);
+}
+.help-main { padding-top: 48px; background: #fff; }
+.help-card { max-width: 1216px; margin: 0 auto; padding: 56px clamp(18px, 4vw, 48px); box-shadow: 0 2px 24px rgba(16, 24, 40, 0.06); }
+.help-title { margin: 0 0 18px; text-align: center; font-weight: 500; font-size: 24px; color: #1f2633; }
+.help-sub { margin: 0 0 22px; text-align: center; color: #3a4252; font-size: 17px; }
+.help-h2 { margin: 26px 0 14px; color: var(--cyan); font-weight: 500; font-size: 21px; }
+.guide-steps { margin: 0; padding-left: 26px; display: flex; flex-direction: column; gap: 18px; }
+.guide-steps li { padding-left: 4px; font-size: 17px; }
+.guide-steps b { display: block; font-weight: 700; margin-bottom: 6px; }
+.guide-steps span { color: #3a4252; }
+.basics-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 40px; }
+.basics-grid p { margin: 8px 0; font-size: 17px; }
+.ussd-y { color: #f2b800; font-weight: 600; }
+.help-search { margin: 0 auto 20px; }
+.video-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.video-tile { display: flex; flex-direction: column; gap: 6px; border: 1px solid var(--border); border-radius: 12px; background: #fff; padding: 0 0 14px; overflow: hidden; text-align: left; }
+.video-tile:hover { box-shadow: var(--shadow-lg); }
+.video-tile b, .video-tile > span { padding: 0 14px; }
+.video-tile > span { color: var(--muted); font-size: 13px; }
+.video-thumb { position: relative; display: grid; place-items: center; height: 170px; background: linear-gradient(135deg, #0b6f98, #12b3ea); color: #fff; margin-bottom: 8px; }
+.video-dur { position: absolute; right: 10px; bottom: 10px; background: rgba(0, 0, 0, 0.55); border-radius: 4px; padding: 2px 6px; font-size: 12px; }
+
+@media (max-width: 800px) {
+  .basics-grid, .video-grid { grid-template-columns: 1fr; }
+}

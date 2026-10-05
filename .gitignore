@@ -1,0 +1,31 @@
+# secrets
+.env
+
+# python
+backend/.venv/
+__pycache__/
+*.pyc
+backend/audit_log.jsonl
+
+# node / build
+node_modules/
+frontend/dist/
+*.tsbuildinfo
+
+# test artifacts
+frontend/e2e/test-results/
+frontend/e2e/report/
+playwright-report/
+test-results/
+
+# editors / OS
+.DS_Store
+.vscode/
+.idea/
+
+# kept on the owner's machine only (not in the repository)
+reference/
+ESIRI_EMREJESHO_BUILD_PROMPT.md
+
+# visual test output is committed (e2e/screenshots); scratch traces are not
+*.log
