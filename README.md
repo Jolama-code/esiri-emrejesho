@@ -115,3 +115,4 @@ The model never touches the page. It only returns tool calls (`click`, `type_tex
 - **Passwords are never typed by eSiri and never included in snapshots** (only "filled: yes/no"); both rules are enforced in code and tested.
 - All e-Mrejesho data (accounts, submissions, audit) stays in this browser's localStorage; the audit is also appended to `backend/audit_log.jsonl` on this machine. Account passwords are stored only as a hash. This is a demo mockup, not the real e-Mrejesho.
 # eSIRI-AI-Gov-Agent
+# eSIRI-AI-Gov-Agent
